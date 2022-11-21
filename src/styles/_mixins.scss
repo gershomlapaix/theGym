@@ -1,0 +1,70 @@
+@mixin heading {
+    font-size: 3rem;
+    color: var(--color-grey-dark-1);
+    margin-bottom: 5rem;
+  }
+  
+  @mixin clearfix {
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+  
+  @mixin center-horizontal-vertical {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+      @media only screen and (max-width: 37.5em) {
+        // 600px
+        @content;
+      }
+    }
+  
+    @if $breakpoint == tab-port {
+      @media only screen and (max-width: 56.25em) {
+        // 900px
+        @content;
+      }
+    }
+  
+    @if $breakpoint == tab-land {
+      @media only screen and (max-width: 75em) {
+        // 1200px
+        @content;
+      }
+    }
+  
+    @if $breakpoint == big-desktop {
+      @media only screen and (min-width: 112.5em) {
+        // 1800px
+        @content;
+      }
+    }
+  }
+  
+  @mixin cardStyle {
+    padding: 6rem 8rem;
+    margin: 4rem 0rem;
+    background-color: #f9fafb;
+  
+    @include respond(tab-land){
+      padding: 3rem 3rem;
+    }
+    @include respond(tab-port){
+      padding: 3rem 3rem;
+    }
+  
+    @include respond(phone) {
+      padding: 3rem 2rem;
+      width: 95%;
+      margin: auto;
+    }
+  }
+  

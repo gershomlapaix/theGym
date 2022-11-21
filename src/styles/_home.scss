@@ -1,0 +1,30 @@
+.homeContainer {
+  padding: 3rem 5rem 0 5rem;
+
+  &__welcome {
+    display: flex;
+    justify-content: space-between;
+
+    &__sectionOne {
+      flex: 0 0 40%;
+
+      &--main-text {
+        padding: 8rem 0 2rem 0;
+        font-size: 6rem;
+        line-height: 1.2;
+      }
+
+      &--simple-text {
+        // padding: 8rem 0 2rem 0;
+        width: 60%;
+      }
+    }
+
+    &__sectionTwo {
+      background-color: #000;
+      color: #fff;
+      padding: 2rem;
+      flex: 0 0 50%;
+    }
+  }
+}

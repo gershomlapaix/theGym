@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-size: 75%; // 1rem = 12px, 12/16px = 75%
+  
+    
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    // box-sizing: border-box;
+    font-weight: 400;
+    // color: var(--color-grey-dark-2);
+    color: rgb(89, 89, 89);
+    font-size: 1.3rem;
+    line-height: 1.8;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;   
+    // font-family: "Quicksand", sans-serif;
+  
+    // background-color: var(--color-grey-light-3);
+  
+    // https://dribbble.com/shots/17387848/attachments/12512065?mode=media
+  }
+  
