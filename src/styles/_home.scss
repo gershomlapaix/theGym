@@ -17,11 +17,40 @@
       &--simple-text {
         // padding: 8rem 0 2rem 0;
         width: 60%;
+        padding-bottom: 2rem;
+        line-height: 1.2;
+      }
+
+      &__quick-actions {
+        display: flex;
+        align-items: center;
+
+        &--btn {
+          margin-right: 6rem;
+          padding: 1rem 3rem;
+          border: 1px solid #000;
+          box-shadow: 4px 4px 1px #000;
+        }
+
+        &--booking-link {
+          text-decoration: none;
+          color: #000;
+          font-weight: 500;
+          font-size: large;
+          transition: all 0.3s;
+          backface-visibility: hidden;
+
+          &:hover {
+            color: red;
+            font-weight: 600;
+            transform: scale(1.1);
+          }
+        }
       }
     }
 
     &__sectionTwo {
-      background-color: #000;
+      background-color: rgb(62, 62, 62);
       color: #fff;
       padding: 2rem;
       flex: 0 0 50%;
